@@ -1,0 +1,22 @@
+---
+title: findLast()
+description: Find the value of an element, based on a callback function and searching in reverse order
+---
+
+## Basics
+
+- Searches in reverse order, so later elements will be searched first
+- Takes in callback function
+- cb function return true if you want to return that value
+- cb function return false if you want to continue searching
+
+## Usage
+
+```js
+const array1 = [5, 12, 50, 130, 44];
+
+const found = array1.findLast((element) => element > 45);
+
+console.log(found);
+// Expected output: 130
+```

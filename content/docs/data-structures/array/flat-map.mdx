@@ -1,0 +1,21 @@
+---
+title: flatMap()
+description: Map through a function and flatten afterwards
+---
+
+## Basics
+
+- Same as mapping through an array followed by flattening
+- More performant than using map and flat separately
+- Returns the resulting array
+
+## Usage
+
+```js
+const arr1 = [1, 2, 1];
+
+const result = arr1.flatMap((num) => (num === 2 ? [2, 2] : 1));
+
+console.log(result);
+// Expected output: Array [1, 2, 2, 1]
+```

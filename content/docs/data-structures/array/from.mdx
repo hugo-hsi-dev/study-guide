@@ -1,0 +1,19 @@
+---
+title: from()
+description: Creating arrays from iterable objects
+---
+
+## Basics
+
+- Used to create an array from an iterable, such as objects, lists, or maps
+- Returns the new array
+
+## Arguments
+
+```js title='Basic usage'
+const array = Array.from(iterable, function, thisArg);
+```
+
+- iterable is the input
+- function is how to use the input, the function should return an output element as part of the resulting array (optional)
+- thisArg, what the 'this' keyword in the function should point to

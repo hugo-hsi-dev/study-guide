@@ -1,0 +1,23 @@
+---
+title: find()
+description: Finds a value based on a callback function
+---
+
+## Basics
+
+- Takes in a callback function that returns a boolean
+- If function returns true, method returns the value of that element
+- If function returns false, continue iterating through array
+- Only returns one value, unlike filter(), which returns a resulting array
+- If none are found, returns undefined
+
+## Usage
+
+```js
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find((element) => element > 10);
+
+console.log(found);
+// Expected output: 12
+```

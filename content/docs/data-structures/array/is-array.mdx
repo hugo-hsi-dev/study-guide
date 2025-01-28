@@ -1,0 +1,28 @@
+---
+title: isArray()
+description: How to check if a variable is an array
+---
+
+## Basics
+
+- Checks if the input value is an array
+- Returns true or false
+
+## Usage
+
+```js
+const array = [0, 2, 8];
+const notArray = 'Not an array';
+
+console.log(Array.isArray(array)); // true
+console.log(Array.isArray(notArray)); // false
+```
+
+## Quirks
+
+- Array.prototype is actually an array
+
+```js
+const arrayPrototype = Array.prototype;
+console.log(Array.isArray(arrayPrototype)); // true
+```

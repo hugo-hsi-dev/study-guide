@@ -1,0 +1,27 @@
+---
+title: indexOf()
+description: Find the index of a known value
+---
+
+## Basics
+
+- Takes in any value
+- Returns the index of the array for which that value is
+- Can also take in a secondary argument of where to start searching
+- Returns -1 of value doesn't exist
+
+## Usage
+
+```js
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// Expected output: 1
+
+// Start from index 2
+console.log(beasts.indexOf('bison', 2));
+// Expected output: 4
+
+console.log(beasts.indexOf('giraffe'));
+// Expected output: -1
+```

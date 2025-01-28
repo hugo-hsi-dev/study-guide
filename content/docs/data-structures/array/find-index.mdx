@@ -1,0 +1,23 @@
+---
+title: findIndex()
+description: Find the index of an element based on a callback function
+---
+
+## Basics
+
+- Takes in a callback function that returns a boolean
+- Return true if you want the index of that element
+- Return false will continue iterating
+- Will only find one/the first element
+- If none are found, returns -1
+
+## Usage
+
+```js
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find((element) => element > 10);
+
+console.log(found);
+// Expected output: 12
+```

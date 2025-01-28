@@ -1,0 +1,20 @@
+---
+title: fromAsync()
+description: Creating arrays from promises
+---
+
+## Basics
+
+- Like Array.from(), but the mapFn can return a promise.
+- The promise will be awaited before being added to the resulting array
+- Returns the new array
+
+## Arguments
+
+```js
+const promiseArray = Array.fromAsync(iterable, asyncFunction, thisArg);
+```
+
+- iterable is the input
+- asyncFunction runs for each element in the iterable, and returns a promise
+- thisArg is the value of 'this' in the asyncFunction

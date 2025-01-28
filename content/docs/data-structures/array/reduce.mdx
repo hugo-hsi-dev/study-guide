@@ -1,0 +1,35 @@
+---
+title: reduce()
+description: Transforms the array into a single value given a cb function
+---
+
+## Basics
+
+- Takes in a cb function that has two Arguments
+- accumulator is the value that is kept between loops
+- currentValue is the value in the array in this current loop
+- The method also has a second argument, that being the initial value
+
+## Usage
+
+```js
+const array1 = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+console.log(sumWithInitial);
+// Expected output: 10
+```
+
+<Callout
+  type='error'
+  title='Careful!'
+>
+  If the array has no elements and there is no initial value given, a type error
+  will be thrown
+</Callout>

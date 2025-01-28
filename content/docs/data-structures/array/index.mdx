@@ -1,0 +1,46 @@
+---
+title: Array
+description: Arrays in JS/TS
+---
+
+## Basics
+
+- Arrays are resizable and can contain different types
+- Accessed using zero based index
+- Last element has -1 index, but can't be used with square bracket notation. Instead, use Array.at(-1)
+- Usually are initialized like
+
+```js title="Using brackets to initialize an array"
+const array = [2, 4, 8];
+```
+
+but can also be created like
+
+```js title="Using the array constructor"
+const array = new Array(2, 4, 8);
+// or
+const array = Array(2, 4, 8);
+```
+
+these two options give identical results.
+
+<Callout title='Interesting fact'>
+  Using with or without 'new' gives the same results
+</Callout>
+
+## Quirks
+
+- Can also use string notation such as
+
+```js title="Using strings as indices"
+years[2] === years['2'];
+```
+
+- Array's length increases automatically as items are added
+
+```js title="Removing elements by setting length"
+const numbers = [1, 2, 3];
+console.log(numbers); // [1, 2, 3]
+numbers.length = 2;
+console.log(numbers); // [1, 2]
+```

@@ -1,0 +1,23 @@
+---
+title: at()
+description: find a value from a given index
+---
+
+## Basics
+
+- Use this method to find the value at an index
+- Equivalent to bracket notation
+
+```js
+const array = [0, 2, 8];
+
+console.log(array[1]); // 2
+console.log(array.at(1)); // 2
+
+console.log(array[array.length - 1]); // 8
+console.log(array.at(-1)); // 8
+```
+
+<Callout title='Special Usage'>
+  The only practical usage is using it to find the last value as shown above
+</Callout>

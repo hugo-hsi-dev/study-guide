@@ -1,0 +1,26 @@
+---
+title: push()
+description: Adds an element to the end of an array
+---
+
+## Basics
+
+- Takes in a value which will be added to the end of the array
+- Doesn't return the resulting array, instead returning the new length
+- Can also take in multiple values, which will be added in the order they were given
+
+## Usage
+
+```js
+const animals = ['pigs', 'goats', 'sheep'];
+
+const count = animals.push('cows');
+console.log(count);
+// Expected output: 4
+console.log(animals);
+// Expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+animals.push('chickens', 'cats', 'dogs');
+console.log(animals);
+// Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+```

@@ -1,0 +1,45 @@
+---
+title: entries()
+description: Creating a new array iterator from an array
+---
+
+## Basics
+
+- An iterator object is one where a next() method is attached
+- The next method returns a resulting object
+- In this case, this resulting object has value and done
+- We can call value to get a 2 length array where the first element is the index and second is the value
+
+## Usage
+
+```js
+const array1 = ['a', 'b', 'c', 'd', 'e'];
+
+// Copy to index 0 the element at index 3
+console.log(array1.copyWithin(0, 3, 4));
+// Expected output: Array ["d", "b", "c", "d", "e"]
+
+// Copy to index 1 all elements from index 3 to the end
+console.log(array1.copyWithin(1, 3));
+// Expected output: Array ["d", "d", "e", "d", "e"]
+```
+
+## Practical Example
+
+You can spread out the index and element when calling entries() and use them as you see fit
+
+```js
+const a = ['a', 'b', 'c'];
+
+for (const [index, element] of a.entries()) {
+  console.log(index, element);
+}
+
+// 0 'a'
+// 1 'b'
+// 2 'c'
+```
+
+## TLDR
+
+This is somewhat of a niche method, good to know but probably not going to use in frontend.

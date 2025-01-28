@@ -1,0 +1,26 @@
+---
+title: pop()
+description: Removes last element
+---
+
+## Basics
+
+- Removes last element in an array
+- Doesn't return the resulting array, instead returns the element that as removed
+
+## Usage
+
+```js
+const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+
+console.log(plants.pop());
+// Expected output: "tomato"
+
+console.log(plants);
+// Expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+
+plants.pop();
+
+console.log(plants);
+// Expected output: Array ["broccoli", "cauliflower", "cabbage"]
+```
