@@ -1,0 +1,25 @@
+---
+title: reduceRight()
+description: transforms array into a single value, parsing through elements from end to start
+---
+
+## Basics
+
+- Same as reduce(), but from right to left
+
+## Usage
+
+```js
+const array1 = [
+  [0, 1],
+  [2, 3],
+  [4, 5],
+];
+
+const result = array1.reduceRight((accumulator, currentValue) =>
+  accumulator.concat(currentValue)
+);
+
+console.log(result);
+// Expected output: Array [4, 5, 2, 3, 0, 1]
+```

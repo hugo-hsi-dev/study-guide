@@ -1,0 +1,29 @@
+---
+title: shift()
+description: Remove the first element from an array
+---
+
+## Basics
+
+- Simply removes the first element of the array
+- Returns that removed element
+
+## Usage
+
+```js
+const array1 = [1, 2, 3];
+
+const firstElement = array1.shift();
+
+console.log(array1);
+// Expected output: Array [2, 3]
+
+console.log(firstElement);
+// Expected output: 1
+```
+
+## Quirks
+
+<Callout title='What if there is no element to remove?'>
+  If the length of the array is 0, nothing is mutated, and undefined is returned
+</Callout>

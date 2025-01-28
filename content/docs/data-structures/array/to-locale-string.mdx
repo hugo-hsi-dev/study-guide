@@ -1,0 +1,20 @@
+---
+title: toLocaleString()
+description: Converting date objects
+---
+
+## Basics
+
+- Converts each element into a string and transformed using their locale string methods, such as for dates
+- The result is not an array, rather it is a single string separated by their local string separator, such as a comma
+
+## Usage
+
+```js
+const array1 = [1, 'a', new Date('21 Dec 1997 14:12:00 UTC')];
+const localeString = array1.toLocaleString('en', { timeZone: 'UTC' });
+
+console.log(localeString);
+// Expected output: "1,a,12/21/1997, 2:12:00 PM",
+// This assumes "en" locale and UTC timezone - your results may vary
+```

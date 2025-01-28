@@ -1,0 +1,27 @@
+---
+title: splice()
+description: Place elements in the middle of an array
+---
+
+## Basics
+
+- Adds elements in place
+- Has 3 argments
+- start means the index of where to insert the element
+- deleteCount means the number of elements to remove from the array
+- 3rd arguments and onwards are items that you want slotted into the resulting array
+
+## Usage
+
+```js
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// Inserts at index 1
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 1, 'May');
+// Replaces 1 element at index 4
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+```

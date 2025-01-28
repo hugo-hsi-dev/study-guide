@@ -1,0 +1,41 @@
+---
+title: sort()
+description: Sorts an array
+---
+
+## Basics
+
+- The callback function is optional
+- If none is provided, it will convert elements into strings and comparing them baseed on UTF-16 values
+- Sorted in ascending order by default
+- If you need more granular control, use the cb function
+- Returns a reference to the original array, except that it is now sorted
+- No copy is made, sorts the array in place
+
+## Usage
+
+```js
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// Expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// Expected output: Array [1, 100000, 21, 30, 4]
+```
+
+## Arguments
+
+- CB function has two Arguments
+- a, and b, both pointing towards elements in the array
+- a is the first element to compare
+- b is the second
+- The CB function should return back a number
+- Negative indicates a should be before b
+- Positive indicates a should be after b
+- Zero means they are equal
+  <Callout title='To remember a and b'>
+    ```js (a, b) => a - b``` sorts numbers in ascending order.
+  </Callout>

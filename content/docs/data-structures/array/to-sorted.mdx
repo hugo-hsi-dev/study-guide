@@ -1,0 +1,25 @@
+---
+title: toSorted()
+description: Sorts an arraoy without altering the original
+---
+
+## Basics
+
+- Sorts an array and copies it
+- Original array is not altered
+- Arguments are same as sort method
+- Returns the resulting array
+
+## Usage
+
+```js
+const months = ['Mar', 'Jan', 'Feb', 'Dec'];
+const sortedMonths = months.toSorted();
+console.log(sortedMonths); // ['Dec', 'Feb', 'Jan', 'Mar']
+console.log(months); // ['Mar', 'Jan', 'Feb', 'Dec']
+
+const values = [1, 10, 21, 2];
+const sortedValues = values.toSorted((a, b) => a - b);
+console.log(sortedValues); // [1, 2, 10, 21]
+console.log(values); // [1, 10, 21, 2]
+```

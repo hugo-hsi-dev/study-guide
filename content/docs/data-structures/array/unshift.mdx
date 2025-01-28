@@ -1,0 +1,22 @@
+---
+title: unshift()
+description: Adds an element to the beginning of an array
+---
+
+## Basics
+
+- Takes in an infinite number of arguments
+- Each will be slotted into the beginning of the array in the specified order
+- Returns new length of the array
+
+## Usage
+
+```js
+const array1 = [1, 2, 3];
+
+console.log(array1.unshift(4, 5));
+// Expected output: 5
+
+console.log(array1);
+// Expected output: Array [4, 5, 1, 2, 3]
+```

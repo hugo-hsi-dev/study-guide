@@ -1,0 +1,24 @@
+---
+title: some()
+description: Checks if any elements pass a certain test
+---
+
+## Basics
+
+- Takes in a cb function
+- CB function should return truthy or falsy values
+- If any iterations through the array returns truthy, the some method will return true
+- The callback function also has 3 Arguments
+- The element itself, the index, and the entire array
+
+## Usage
+
+```js
+const array = [1, 2, 3, 4, 5];
+
+// Checks whether an element is even
+const even = (element) => element % 2 === 0;
+
+console.log(array.some(even));
+// Expected output: true
+```
